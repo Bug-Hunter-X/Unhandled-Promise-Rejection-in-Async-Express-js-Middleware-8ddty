@@ -1,0 +1,3 @@
+# Unhandled Promise Rejection in Async Express.js Middleware
+
+This repository demonstrates a common error in Express.js applications where asynchronous operations within middleware (using `setTimeout` in this example) can lead to unhandled promise rejections if errors occur within the asynchronous code.  The error occurs because the `setTimeout` function doesn't inherently integrate with Express.js' error handling mechanism.  The solution showcases proper error handling techniques for asynchronous middleware.
